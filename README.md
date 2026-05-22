@@ -1,31 +1,29 @@
-# TechLab Products Manager 🚀
+# TechLab Products Manager 
 
 Gestor de productos profesional que interactúa con la **FakeStore API** desde línea de comandos. Este proyecto demuestra dominio en Node.js, async/await, fetch API y manejo de argumentos de terminal.
 
-## 📋 Requisitos Completados
-
-### ✅ Requerimiento #1: Configuración Inicial
+###  Requerimiento #1: Configuración Inicial
 - [x] Directorio del proyecto creado
 - [x] `index.js` como punto de entrada
 - [x] `npm init -y` ejecutado
 - [x] Propiedad `"type": "module"` en `package.json` (ESModules habilitados)
 - [x] Script `start` configurado para ejecutar con `npm run start`
 
-### ✅ Requerimiento #2: Lógica de Gestión de Productos
+###  Requerimiento #2: Lógica de Gestión de Productos
 
-#### 1️⃣ Consultar Todos los Productos
+#### 1 Consultar Todos los Productos
 ```bash
 npm run start GET products
 ```
 **Resultado:** Lista completa de productos en formato JSON
 
-#### 2️⃣ Consultar Producto Específico
+#### 2 Consultar Producto Específico
 ```bash
 npm run start GET products/15
 ```
 **Resultado:** Datos del producto con ID 15
 
-#### 3️⃣ Crear Nuevo Producto
+#### 3 Crear Nuevo Producto
 ```bash
 npm run start POST products "T-Shirt-Rex" 300 "remeras"
 ```
@@ -36,26 +34,13 @@ npm run start POST products "T-Shirt-Rex" 300 "remeras"
 
 **Resultado:** Producto creado con ID asignado por la API
 
-#### 4️⃣ Eliminar Producto
+#### 4 Eliminar Producto
 ```bash
 npm run start DELETE products/7
 ```
 **Resultado:** Confirmación de eliminación
 
-## 🛠️ Características Técnicas
-
-✅ **process.argv** - Captura de comandos desde terminal  
-✅ **Fetch API** - Peticiones HTTP asincrónicas (GET, POST, DELETE)  
-✅ **async/await** - Manejo profesional de operaciones asincrónicas  
-✅ **Destructuring** - Desestructuración de arrays y objetos  
-✅ **Spread operator** - Expansión de argumentos  
-✅ **Métodos de arrays/strings** - Manipulación de datos  
-✅ **Validación robusta** - Verificación de tipos y valores  
-✅ **Manejo de errores** - Try/catch con mensajes claros  
-✅ **ESModules** - Configuración moderna de módulos  
-✅ **Cero dependencias externas** - Solo API nativa de Node.js
-
-## 📦 Instalación
+##  Instalación
 
 ```bash
 # Clonar el repositorio
@@ -66,7 +51,7 @@ cd techlab-products-manager
 npm install
 ```
 
-## 🚀 Uso
+##  Uso
 
 ### Obtener todos los productos
 ```bash
@@ -93,11 +78,11 @@ npm run start DELETE products/101
 npm run start DELETE products/120
 ```
 
-## 📚 Ejemplos de Respuestas
+##  Ejemplos de Respuestas!
 
 ### GET products (primeros 2 productos)
 ```json
-✅ Datos obtenidos exitosamente:
+ Datos obtenidos exitosamente:
 [
   {
     "id": 1,
@@ -124,7 +109,7 @@ npm run start DELETE products/120
 
 ### POST products
 ```json
-✅ Producto creado exitosamente:
+ Producto creado exitosamente:
 {
   "title": "T-Shirt-Rex",
   "price": 300,
@@ -136,57 +121,14 @@ npm run start DELETE products/120
 
 ### DELETE products/<id>
 ```json
-✅ Producto eliminado exitosamente:
+ Producto eliminado exitosamente:
 {
   "id": 7
 }
 ```
 
-## 🔗 API Utilizada
+##  API Utilizada
 
 - **Base URL:** `https://fakestoreapi.com`
 - **Endpoints:** `/products`, `/products/{id}`
 - **Documentación:** https://fakestoreapi.com/docs
-
-## 🎓 Conceptos Aprendidos
-
-1. **Procesamiento de comandos** - Captura y parseo de argumentos CLI
-2. **Peticiones HTTP asincrónicas** - Uso de Fetch API moderna
-3. **Validación de datos** - Verificación de tipos y rangos
-4. **Manejo de errores** - Try/catch con mensajes descriptivos
-5. **Estructuras de datos** - Objetos y arrays en JavaScript
-6. **Programación funcional** - Funciones reutilizables y modulares
-7. **Seguridad** - Validación de entrada de usuarios
-
-## 📄 Archivos del Proyecto
-
-```
-techlab-products-manager/
-├── package.json      # Configuración de npm
-├── index.js          # Punto de entrada (lógica principal)
-└── README.md         # Este archivo
-```
-
-## ✨ Notas de Desarrollo
-
-- El proyecto sigue principios de código limpio y profesional
-- Mensajes de error y éxito claros con emojis para mejor UX
-- Validación exhaustiva de entrada del usuario
-- Estructura modular con funciones independientes por operación HTTP
-- Listo para producción y escalable
-
-## 🎯 Conclusión
-
-Este proyecto demuestra competencias clave:
-- ✅ Dominio de Node.js y JavaScript moderno
-- ✅ Integración con APIs REST
-- ✅ Manejo de entrada/salida de usuario
-- ✅ Buenas prácticas de desarrollo
-- ✅ Código limpio y documentado
-
-**¡Listo para unirse a TechLab!** 🚀
-
----
-
-**Autor:** Vanessa Alberti  
-**Licencia:** ISC
